@@ -2,10 +2,10 @@
     <xml name="requirements">
         <requirements>
         <!--
-            Use older version of NCBI BLAST+ because 2.6.0 is available
-            through bioconda but not through the Galaxy toolshed
+            Keep BLAST version in line with peterjc repo: https://github.com/peterjc/galaxy_blast
         -->
-            <requirement type="package" version="2.5.0">blast</requirement>
+            <requirement type="package" version="2.7.1">blast</requirement>
+	    <requirement type="package">perl</requirement>
             <yield />
         </requirements>
     </xml>

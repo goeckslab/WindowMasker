@@ -32,7 +32,7 @@
 
         ## Convert WindowMasker interval output to BED format
         #if str($output_format) == "interval":
-            | ${__tool_directory__}/windowmasker_to_bed.pl > "${mask_output}"
+            | perl ${__tool_directory__}/windowmasker_to_bed.pl > "${mask_output}"
         #else
             -out "${mask_output}"
         #end if
