@@ -1,55 +1,19 @@
 <macros>
     <xml name="requirements">
         <requirements>
-        <!--
-            Keep BLAST version in line with peterjc repo: https://github.com/peterjc/galaxy_blast
-        -->
+            <!--
+                Keep BLAST version in line with peterjc repo: https://github.com/peterjc/galaxy_blast
+            -->
             <requirement type="package" version="2.7.1">blast</requirement>
-	    <requirement type="package">perl</requirement>
+	        <requirement type="package" version="5.32.1.1">perl</requirement>
             <yield />
         </requirements>
     </xml>
     <xml name="citations">
         <citations>
-            <citation type="bibtex">
-                @article{Morgulis_2005,
-                    title={WindowMasker: window-based masker for sequenced genomes},
-                    volume={22},
-                    ISSN={1460-2059},
-                    url={http://dx.doi.org/10.1093/bioinformatics/bti774},
-                    DOI={10.1093/bioinformatics/bti774},
-                    number={2}, journal={Bioinformatics},
-                    publisher={Oxford University Press (OUP)},
-                    author={Morgulis, A. and Gertz, E. M. and Schäffer, A. A. and Agarwala, R.},
-                    year={2005}, month={Nov}, pages={134–141}
-                }
-            </citation>
-            <citation type="bibtex">
-                 @article{Cock_2015,
-                    title={NCBI BLAST+ integrated into Galaxy},
-                    volume={4},
-                    ISSN={2047-217X},
-                    url={http://dx.doi.org/10.1186/s13742-015-0080-7},
-                    DOI={10.1186/s13742-015-0080-7},
-                    number={1},
-                    journal={GigaScience},
-                    publisher={Oxford University Press (OUP)},
-                    author={Cock, Peter J. A. and Chilton, John M. and Grüning, Björn and Johnson, James E. and Soranzo, Nicola},
-                    year={2015}, month={Aug}
-                }
-            </citation>
+            <citation type="doi">10.1093/bioinformatics/bti774</citation>
+            <citation type="doi">10.1186/s13742-015-0080-7</citation>
             <yield />
         </citations>
     </xml>
-
-    <!-- Helper function to add optional advanced parameters to command -->
-    <token name="@OPTIONAL_PARAM_FUNC@">
-<![CDATA[
-        #def optional_param($_flag, $_flag_value, $_sep=" ")
-            #if str($_flag_value) and str($_flag_value).strip():
-                ${_flag}${_sep}${_flag_value}
-            #end if
-        #end def
-]]>
-    </token>
 </macros>

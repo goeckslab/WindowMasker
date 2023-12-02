@@ -1,4 +1,0 @@
-<?xml version="1.0"?>
-<repositories description="Datatype definitions for NCBI BLAST">
-    <repository name="blast_datatypes" owner="devteam" />
-</repositories>
