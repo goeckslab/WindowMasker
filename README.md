@@ -1,3 +1,9 @@
+# NOTE: tool has been added to the [Galaxy Project](https://galaxyproject.org/)'s [Tools-IUC repo](https://github.com/galaxyproject/tools-iuc/); future updates will be applied there, and it should be considered the official source of the tool:
+- https://github.com/galaxyproject/tools-iuc/tree/main/tools/windowmasker
+
+Legacy README follows
+------------
+
 WindowMasker
 ------------
 
